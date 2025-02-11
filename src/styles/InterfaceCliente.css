@@ -1,0 +1,107 @@
+/* src/components/pages/InterfaceCliente.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d9d9d9;
+  font-family: Arial, sans-serif;
+}
+
+.cliente-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cliente-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.logo-container {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.logo-ru {
+  background-color: #d4a038; /* Cor de fundo amarela do logo */
+  color: #4d2e00; /* Cor do texto RU */
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.welcome-message {
+  color: #a6a6a6; /* Cinza claro para a saudação */
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.service-message {
+  font-size: 1em;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.cliente-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border: 1px solid #4d4d4d;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cliente-button:hover {
+  background-color: #e6e6e6;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.logout-button {
+  color: #000000;
+  border-color: #4d4d4d;
+}
+
+.logout-button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Mensagem de confirmação */
+.pedido-mensagem {
+  margin-top: 20px;
+  background-color: #4caf50; /* Verde */
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  animation: fadeInOut 5s ease-in-out;
+}
+
+/* Animação para aparecer e sumir suavemente */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}

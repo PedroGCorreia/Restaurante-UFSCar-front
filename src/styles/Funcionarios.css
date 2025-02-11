@@ -1,0 +1,128 @@
+.funcionarios-container {
+  padding: 20px;
+  margin-left: 7vw; /* Alinhamento semelhante à página Pedidos */
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+.funcionarios-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.funcionarios-button {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* Fundo branco */
+  color: #1e90ff; /* Cor azul */
+  border: 2px solid #1e90ff; /* Borda azul */
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1em;
+}
+
+.funcionarios-button:hover {
+  background-color: #a6a6a6; /* Fundo cinza ao hover */
+  color: #1e90ff; /* Cor azul permanece */
+}
+
+.button-icon {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.funcionarios-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.funcionarios-table {
+  width: 90%; /* Agora a tabela ocupa 90% da largura */
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #ffffff; /* Fundo branco */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.funcionarios-table thead {
+  background-color: #f2f2f2;
+}
+
+.funcionarios-table th,
+.funcionarios-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px 15px; /* Leve padding */
+}
+
+.funcionarios-table th {
+  color: #1e90ff; /* Cor azul para cabeçalhos */
+}
+
+.funcionarios-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.acoes-cell {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente o ícone */
+  align-items: center;   /* Centraliza verticalmente o ícone */
+}
+
+.edit-icon {
+  color: #000000; /* Ícone de edição preto */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.edit-icon:hover {
+  color: #1e90ff; /* Mudar a cor ao hover */
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+  .funcionarios-table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .funcionarios-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .funcionarios-content {
+    flex-direction: column;
+  }
+
+  .funcionarios-table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .funcionarios-button span {
+    display: none; /* Esconder texto nos botões para telas pequenas */
+  }
+
+  .button-icon {
+    margin-right: 0;
+  }
+
+  .funcionarios-table th,
+  .funcionarios-table td {
+    padding: 10px 12px; /* Reduzir padding para telas menores */
+  }
+
+  .funcionarios-container {
+    margin-left: 7vw; /* Garantir alinhamento semelhante */
+  }
+}

@@ -1,0 +1,74 @@
+/* src/components/Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 7%; /* Mantém a largura original */
+  min-width: 80px; /* Largura mínima para dispositivos menores */
+  height: 100vh;
+  background-color: #464545; /* Cinza Escuro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  z-index: 1100;
+}
+
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff; /* Branco */
+  text-decoration: none;
+  padding: 20px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-link .icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #ffffff; /* Azul Royal para ícones */
+}
+
+.sidebar-link span {
+  font-size: 14px;
+  color: #ffffff; /* Branco */
+}
+
+.sidebar-link:hover {
+  background-color: #333333; /* Cinza mais escuro ao hover */
+}
+
+.sidebar-link.active {
+  background-color: #1e90ff; /* Azul Royal para link ativo */
+  color: #ffffff; /* Branco */
+}
+
+.sidebar-link.active .icon {
+  color: #ffffff; /* Branco para ícones do link ativo */
+}
+
+/* Estilo para o logout (apenas ícone) */
+.logout-icon-wrapper {
+  margin-top: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.logout-icon {
+  font-size: 24px;
+  color: #ffffff; /* Ícone em branco */
+  transition: color 0.3s;
+}
+
+.logout-icon-wrapper:hover .logout-icon {
+  color: #a6a6a6;
+}

@@ -1,0 +1,130 @@
+/* src/components/pages/RegistrarConsumoModal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 70vh; /* Limita a altura a 70% da tela */
+    padding: 20px 30px 30px 30px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease-out;
+    overflow-y: auto;
+  }
+  
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal-title {
+    text-align: left;
+    color: #4d4d4d;
+    font-size: 1.8em;
+    margin: 0;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #888888;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+  }
+  
+  .close-button:hover {
+    color: #000000;
+  }
+  
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .consumption-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+  
+  .consumption-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .consumption-item input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+  
+  .product-name {
+    flex: 1;
+    text-align: left;
+    color: #333333;
+  }
+  
+  .consumption-item input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 0.8em;
+  }
+  
+  .concluir-button {
+    background-color: #1e90ff; /* Fundo azul */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+    margin: 20px auto 0; /* Centraliza o botão horizontalmente */
+  }
+  
+  .concluir-button:hover {
+    background-color: #1c86ee;
+    color: #ffffff;
+  }
+  

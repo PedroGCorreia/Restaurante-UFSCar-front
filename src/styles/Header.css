@@ -1,0 +1,43 @@
+/* src/components/Header.css */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 7vw; /* Mantém alinhamento com a Sidebar */
+  width: 93vw; /* Ajuste conforme a largura da Sidebar */
+  height: 15vh;
+  background-color: #FFFFFF; /* Branco */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #4d4d4d; /* Cinza Escuro */
+}
+
+@media (max-width: 768px) {
+  .header {
+    left: 20%; /* Ajuste conforme a nova largura da Sidebar em dispositivos menores */
+    width: 80%;
+    height: 10vh;
+  }
+
+  .header-title {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 8vh;
+  }
+
+  .header-title {
+    font-size: 1.5em;
+  }
+}

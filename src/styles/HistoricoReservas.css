@@ -1,0 +1,33 @@
+.historico-container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9d9d9;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+  
+.historico-card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 65vw;
+}
+  
+@media (max-width: 600px) {
+
+  .historico-container {
+    padding: 20px 10px;
+  }
+  
+  .historico-title {
+    font-size: 1.5em;
+  }
+  
+  .historico-card-list {
+    max-width: 100%;
+  }
+  
+}  
