@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/NovaReservaModal.css';
 import { FaTimes } from 'react-icons/fa';
+import { redirect } from 'react-router-dom';
 
 function NovaReservaModal({ isOpen, onClose, onSubmit, existingReservas }) {
   const [cliente, setCliente] = useState('');
@@ -51,7 +52,7 @@ function NovaReservaModal({ isOpen, onClose, onSubmit, existingReservas }) {
         
         alert('Reserva criado com sucesso!');
         
-        window.location.reload(); 
+        redirect('/reservas');
   
       } catch (error) {
         console.error('Erro ao adicionar reserva:', error);

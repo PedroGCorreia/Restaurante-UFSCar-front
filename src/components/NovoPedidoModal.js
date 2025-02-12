@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FaPlus } from 'react-icons/fa';
 import '../styles/NovoPedidoModal.css';
+import { redirect } from 'react-router-dom';
 
 function NovoPedidoModal({ isOpen, onClose, onSubmit }) {
 
@@ -54,7 +55,7 @@ function NovoPedidoModal({ isOpen, onClose, onSubmit }) {
       onClose();
       alert('Pedido criado com sucesso!');
       
-      window.location.reload(); 
+      redirect('/pedidos');
 
     } catch (error) {
       console.error('Erro ao adicionar pedido:', error);
