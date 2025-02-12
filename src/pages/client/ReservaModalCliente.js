@@ -69,7 +69,7 @@ function ReservaModalCliente({ isOpen, onClose }) {
               type="text"
               value={data}
               onChange={(e) => setData(e.target.value)}
-              placeholder="Ex: 2025-03-25"
+              placeholder="Ex: 02/05/2025"
               required
             />
           </div>

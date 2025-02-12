@@ -44,21 +44,12 @@ function InterfaceCliente({ onLogout, usuario }) {
           Visualizar Cardápio
         </button>
 
-        <button className="cliente-button" onClick={handleFazerPedido}>
-          <FaShoppingBag className="button-icon" />
-          Fazer Pedido
-        </button>
-
         <button className="cliente-button logout-button" onClick={onLogout}>
           <FaSignOutAlt className="button-icon" />
           Sair
         </button>
 
-        {pedidoSolicitado && (
-          <div className="pedido-mensagem">
-            O Garçom foi solicitado e irá até você!
-          </div>
-        )}
+
       </div>
 
       <CardapioModal isOpen={isCardapioOpen} onClose={() => setIsCardapioOpen(false)} />

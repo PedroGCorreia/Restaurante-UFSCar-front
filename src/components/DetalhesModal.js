@@ -16,7 +16,7 @@ function DetalhesModal({ isOpen, onClose, pedido }) {
           <FaTimes />
         </button>
         <h2>{pedido.titulo}</h2>
-        <p><strong>Mesa:</strong> {pedido.mesa}</p>
+        <p><strong>Mesa:</strong> {pedido.table}</p>
         <div className="detalhes-modal-itens">
           <h3>Itens:</h3>
           <ul>
