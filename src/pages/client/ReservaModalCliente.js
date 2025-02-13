@@ -1,4 +1,3 @@
-// src/components/pages/ReservaModalCliente.js
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/ReservaModalCliente.css';
@@ -22,7 +21,7 @@ function ReservaModalCliente({ isOpen, onClose }) {
     setIsSubmitting(true);
     setError(null);
 
-    // Dados da reserva utilizando o username do LocalStorage com os nomes modificados
+    // Dados da reserva utilizando o username do LocalStorage
     const reservaData = {
       client: username,
       date: data,
@@ -44,7 +43,7 @@ function ReservaModalCliente({ isOpen, onClose }) {
       }
       
       alert('Reserva realizada com sucesso!');
-      onClose(); // Fecha o modal em caso de sucesso
+      onClose();
 
     } catch (err) {
       setError(err.message);
@@ -60,7 +59,6 @@ function ReservaModalCliente({ isOpen, onClose }) {
         <form className="modal-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Nome</label>
-            {/* Exibe o username obtido do LocalStorage */}
             <input type="text" value={username} readOnly />
           </div>
           <div className="form-group">

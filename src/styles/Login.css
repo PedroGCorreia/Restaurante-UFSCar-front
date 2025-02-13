@@ -1,9 +1,7 @@
-/* src/components/pages/Login.css */
-
 body {
   margin: 0;
   padding: 0;
-  background-color: #1e90ff; /* Fundo azul */
+  background-color: #1e90ff; 
   font-family: Arial, sans-serif;
 }
 
@@ -15,7 +13,7 @@ body {
 }
 
 .login-form {
-  background-color: #ffffff; /* Fundo branco para o formulário */
+  background-color: #ffffff; 
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);

@@ -1,4 +1,3 @@
-// src/components/pages/VisualizarReservasModal.js
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/VisualizarReservaModal.css';
@@ -20,7 +19,6 @@ function VisualizarReservasModal({ isOpen, onClose }) {
     // Obtém o username do LocalStorage, da mesma forma que no POST
     const username = localStorage.getItem('username') || '';
     try {
-      // A requisição utiliza o parâmetro "client" com o valor do username
       const response = await fetch(
         `http://localhost:3000/reservations?client=${encodeURIComponent(username)}`,
         {

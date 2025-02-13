@@ -39,7 +39,7 @@ function NovoPedidoModal({ isOpen, onClose, onSubmit }) {
           isCompleted: false,
           items: items.map(({ item, quantidade }) => ({
             item,
-            quantity: Number(quantidade), // Certifica-se de que é um número
+            quantity: Number(quantidade),
           })),
         }),
       });

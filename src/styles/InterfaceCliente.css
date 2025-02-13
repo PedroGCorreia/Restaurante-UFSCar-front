@@ -1,5 +1,3 @@
-/* src/components/pages/InterfaceCliente.css */
-
 body {
   margin: 0;
   padding: 0;
@@ -32,8 +30,8 @@ body {
 }
 
 .logo-ru {
-  background-color: #d4a038; /* Cor de fundo amarela do logo */
-  color: #4d2e00; /* Cor do texto RU */
+  background-color: #d4a038; 
+  color: #4d2e00; 
   font-size: 1.8em;
   font-weight: bold;
   padding: 10px 15px;
@@ -41,7 +39,7 @@ body {
 }
 
 .welcome-message {
-  color: #a6a6a6; /* Cinza claro para a saudação */
+  color: #a6a6a6; 
   font-size: 1.2em;
   margin-bottom: 5px;
 }
@@ -87,10 +85,9 @@ body {
   background-color: #e6e6e6;
 }
 
-/* Mensagem de confirmação */
 .pedido-mensagem {
   margin-top: 20px;
-  background-color: #4caf50; /* Verde */
+  background-color: #4caf50; 
   color: #ffffff;
   padding: 12px 20px;
   border-radius: 5px;
@@ -98,7 +95,6 @@ body {
   animation: fadeInOut 5s ease-in-out;
 }
 
-/* Animação para aparecer e sumir suavemente */
 @keyframes fadeInOut {
   0% { opacity: 0; transform: translateY(-10px); }
   10% { opacity: 1; transform: translateY(0); }

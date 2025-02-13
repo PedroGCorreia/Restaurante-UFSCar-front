@@ -14,7 +14,6 @@ function Pedidos() {
   const [pedidosAbertos, setPedidosAbertos] = useState([]);
   const [pedidosConcluidos, setPedidosConcluidos] = useState([]);
 
-  // Carregar pedidos do backend
   useEffect(() => {
     fetch('http://localhost:3000/orders')
       .then(response => response.json())

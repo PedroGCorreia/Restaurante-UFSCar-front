@@ -1,12 +1,10 @@
-/* src/components/Header.css */
-
 .header {
   position: fixed;
   top: 0;
-  left: 7vw; /* Mantém alinhamento com a Sidebar */
-  width: 93vw; /* Ajuste conforme a largura da Sidebar */
+  left: 7vw; 
+  width: 93vw; 
   height: 15vh;
-  background-color: #FFFFFF; /* Branco */
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,12 +15,12 @@
 .header-title {
   font-size: 2em;
   font-weight: bold;
-  color: #4d4d4d; /* Cinza Escuro */
+  color: #4d4d4d; 
 }
 
 @media (max-width: 768px) {
   .header {
-    left: 20%; /* Ajuste conforme a nova largura da Sidebar em dispositivos menores */
+    left: 20%; 
     width: 80%;
     height: 10vh;
   }

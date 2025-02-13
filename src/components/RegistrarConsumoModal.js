@@ -1,12 +1,9 @@
-// src/components/pages/RegistrarConsumoModal.js
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FaTimes } from 'react-icons/fa';
 import '../styles/RegistrarConsumoModal.css';
 
 function RegistrarConsumoModal({ isOpen, onClose, products, onSubmit }) {
-  // Inicializa um estado para controle do consumo para cada produto.
-  // Para cada produto, armazenamos: selected (checkbox), consumo (quantidade informada) e, opcionalmente, um erro.
   const [consumptionData, setConsumptionData] = useState([]);
 
   useEffect(() => {
@@ -60,7 +57,6 @@ function RegistrarConsumoModal({ isOpen, onClose, products, onSubmit }) {
       }
     }
 
-    // Para cada produto selecionado, realize a atualização via PUT.
     const updatePromises = consumptionData
       .filter(item => item.selected)
       .map(item => {

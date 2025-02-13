@@ -1,11 +1,9 @@
-// src/components/pages/RelatoriosFinanceiros.js
 import React, { useState } from 'react';
 import { FaPlus } from 'react-icons/fa';
 import { Pie, Line } from 'react-chartjs-2';
 import '../styles/RelatoriosFinanceiros.css';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, LineElement, Title } from 'chart.js';
 
-// Registrando os componentes necessários do Chart.js
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, LineElement, Title);
 
 function RelatoriosFinanceiros() {
@@ -46,8 +44,8 @@ function RelatoriosFinanceiros() {
         label: 'Movimentações',
         data: [totalReceita, totalDespesa],
         backgroundColor: [
-          'rgba(75, 192, 192, 0.6)', // Verde para Receita
-          'rgba(255, 99, 132, 0.6)', // Vermelho para Despesa
+          'rgba(75, 192, 192, 0.6)',
+          'rgba(255, 99, 132, 0.6)',
         ],
         borderColor: [
           'rgba(75, 192, 192, 1)',
@@ -66,7 +64,7 @@ function RelatoriosFinanceiros() {
         label: 'Receita',
         data: movimentacoes.map((m) => (m.tipo === 'Receita' ? m.valor : null)),
         fill: false,
-        backgroundColor: 'rgba(75, 192, 192, 1)', // Verde
+        backgroundColor: 'rgba(75, 192, 192, 1)',
         borderColor: 'rgba(75, 192, 192, 1)',
         tension: 0.1,
       },
@@ -74,7 +72,7 @@ function RelatoriosFinanceiros() {
         label: 'Despesa',
         data: movimentacoes.map((m) => (m.tipo === 'Despesa' ? m.valor : null)),
         fill: false,
-        backgroundColor: 'rgba(255, 99, 132, 1)', // Vermelho
+        backgroundColor: 'rgba(255, 99, 132, 1)', 
         borderColor: 'rgba(255, 99, 132, 1)',
         tension: 0.1,
       },

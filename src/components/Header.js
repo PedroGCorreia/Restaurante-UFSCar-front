@@ -1,4 +1,3 @@
-// src/components/Header.js
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/Header.css';
@@ -13,7 +12,7 @@ function Header() {
     '/reservas/historico': 'Histórico de Reservas',
     '/estoque': 'Estoque',
     '/funcionarios': 'Gestão de funcionários',
-    '/relatorios-financeiros': 'Relatórios financeiros', // Adicionando a nova rota
+    '/relatorios-financeiros': 'Relatórios financeiros',
   };
 
   // Obtém o título com base na rota atual ou define um título padrão

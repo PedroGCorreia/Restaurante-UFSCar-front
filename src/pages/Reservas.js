@@ -45,7 +45,6 @@ function Reservas() {
     fetchReservas();
   }, []);
 
-  // Converte "YYYY-MM-DD" para um objeto Date
   const parseDate = (dataStr) => {
     const [ano, mes, dia] = dataStr.split('-').map(Number);
     return new Date(ano, mes - 1, dia);
@@ -99,7 +98,6 @@ function Reservas() {
         ))}
       </div>
 
-      {/* Modal para Nova Reserva */}
       <NovaReservaModal
         isOpen={isModalOpen}
         onClose={handleCloseModal}

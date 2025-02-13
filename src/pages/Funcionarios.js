@@ -1,4 +1,3 @@
-// src/components/pages/Funcionarios.js
 import React, { useState, useEffect } from 'react';
 import { FaPlus, FaEdit } from 'react-icons/fa';
 import NovoFuncionarioModal from '../components/NovoFuncionarioModal';

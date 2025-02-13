@@ -1,4 +1,3 @@
-// src/components/pages/NovoFuncionarioModal.js
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/NovoFuncionarioModal.css';
@@ -36,7 +35,6 @@ function NovoFuncionarioModal({ isOpen, onClose, onSubmit }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Cria o objeto com os dados do funcionário, agora incluindo "name"
     const newEmployee = {
       name,
       cpf,

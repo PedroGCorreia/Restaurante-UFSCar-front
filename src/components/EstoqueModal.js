@@ -1,4 +1,3 @@
-// src/components/pages/EstoqueModal.js
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FaPlus } from 'react-icons/fa';
@@ -28,13 +27,11 @@ function EstoqueModal({ isOpen, onClose, onSubmit }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Para cada item, envia um POST para adicionar o produto ao estoque.
       const responses = await Promise.all(
         items.map(item =>
           fetch('http://localhost:3000/products', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            // Considerando que o modelo Product utiliza "productName" e "quantity" (como string)
             body: JSON.stringify({
               productName: item.produto,
               quantity: item.quantidade.toString()
@@ -47,7 +44,6 @@ function EstoqueModal({ isOpen, onClose, onSubmit }) {
           })
         )
       );
-      // Chama o callback para atualizar a lista de produtos (se necessário)
       if (onSubmit) {
         onSubmit(responses);
       }

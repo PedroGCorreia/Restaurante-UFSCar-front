@@ -1,4 +1,3 @@
-// src/components/pages/Estoque.js
 import React, { useState, useEffect } from 'react';
 import { FaPlus, FaTrashAlt } from 'react-icons/fa';
 import EstoqueModal from '../components/EstoqueModal';

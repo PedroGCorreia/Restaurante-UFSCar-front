@@ -1,4 +1,3 @@
-// src/components/pages/InterfaceCliente.js
 import React, { useState } from 'react';
 import { FaBookmark, FaEye, FaUtensils, FaShoppingBag, FaSignOutAlt } from 'react-icons/fa';
 import '../../styles/InterfaceCliente.css';
@@ -27,13 +26,11 @@ function InterfaceCliente({ onLogout, usuario }) {
         <h2 className="welcome-message">Bem-vindo ao Restaurante UFSCar</h2>
         <p className="service-message">Qual serviço você deseja acessar?</p>
         
-        {/* Abre modal para fazer reserva */}
         <button className="cliente-button" onClick={() => setIsReservaModalOpen(true)}>
           <FaBookmark className="button-icon" />
           Fazer reserva de mesa
         </button>
 
-        {/* Abre modal para visualizar reservas */}
         <button className="cliente-button" onClick={() => setIsVisualizarReservasModalOpen(true)}>
           <FaEye className="button-icon" />
           Visualizar reserva da mesa

@@ -1,6 +1,6 @@
 .funcionarios-container {
   padding: 20px;
-  margin-left: 7vw; /* Alinhamento semelhante à página Pedidos */
+  margin-left: 7vw; 
   box-sizing: border-box;
   min-height: 100%;
 }
@@ -14,9 +14,9 @@
 .funcionarios-button {
   display: flex;
   align-items: center;
-  background-color: #ffffff; /* Fundo branco */
-  color: #1e90ff; /* Cor azul */
-  border: 2px solid #1e90ff; /* Borda azul */
+  background-color: #ffffff; 
+  color: #1e90ff; 
+  border: 2px solid #1e90ff; 
   border-radius: 10px;
   padding: 10px 15px;
   cursor: pointer;
@@ -25,8 +25,8 @@
 }
 
 .funcionarios-button:hover {
-  background-color: #a6a6a6; /* Fundo cinza ao hover */
-  color: #1e90ff; /* Cor azul permanece */
+  background-color: #a6a6a6; 
+  color: #1e90ff;
 }
 
 .button-icon {
@@ -41,10 +41,10 @@
 }
 
 .funcionarios-table {
-  width: 90%; /* Agora a tabela ocupa 90% da largura */
+  width: 90%; 
   border-collapse: separate;
   border-spacing: 0;
-  background-color: #ffffff; /* Fundo branco */
+  background-color: #ffffff; 
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -58,11 +58,11 @@
 .funcionarios-table td {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 12px 15px; /* Leve padding */
+  padding: 12px 15px; 
 }
 
 .funcionarios-table th {
-  color: #1e90ff; /* Cor azul para cabeçalhos */
+  color: #1e90ff; 
 }
 
 .funcionarios-table tr:nth-child(even) {
@@ -71,21 +71,19 @@
 
 .acoes-cell {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente o ícone */
-  align-items: center;   /* Centraliza verticalmente o ícone */
+  justify-content: center; 
+  align-items: center;   
 }
 
 .edit-icon {
-  color: #000000; /* Ícone de edição preto */
+  color: #000000; 
   cursor: pointer;
   transition: color 0.3s;
 }
 
 .edit-icon:hover {
-  color: #1e90ff; /* Mudar a cor ao hover */
+  color: #1e90ff; 
 }
-
-/* Responsividade */
 
 @media (max-width: 1024px) {
   .funcionarios-table {
@@ -110,7 +108,7 @@
 
 @media (max-width: 600px) {
   .funcionarios-button span {
-    display: none; /* Esconder texto nos botões para telas pequenas */
+    display: none; 
   }
 
   .button-icon {
@@ -119,10 +117,10 @@
 
   .funcionarios-table th,
   .funcionarios-table td {
-    padding: 10px 12px; /* Reduzir padding para telas menores */
+    padding: 10px 12px; 
   }
 
   .funcionarios-container {
-    margin-left: 7vw; /* Garantir alinhamento semelhante */
+    margin-left: 7vw; 
   }
 }

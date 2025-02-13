@@ -1,11 +1,9 @@
-// src/components/pages/EditFuncionarioModal.js
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/EditFuncionarioModal.css';
 import { FaTimes } from 'react-icons/fa';
 
 function EditFuncionarioModal({ isOpen, onClose, onSubmit, employee }) {
-  // Estados para os campos do formulário (baseados no modelo Employee)
   const [name, setName] = useState('');
   const [cpf, setCpf] = useState('');
   const [birthdate, setBirthdate] = useState('');
@@ -46,7 +44,6 @@ function EditFuncionarioModal({ isOpen, onClose, onSubmit, employee }) {
     };
 
     try {
-      // Supondo que o backend utilize o id para identificar o funcionário
       const response = await fetch(`http://localhost:3000/employees/${employee.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
